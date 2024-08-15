@@ -8,7 +8,7 @@ import {
   DisclosureButton,
 } from "@headlessui/react";
 
-export function PopupWidget() {
+export function PopupWidget() { 
   const {
     register,
     handleSubmit,

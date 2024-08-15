@@ -13,42 +13,41 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              Hoje consigo o contato de nossos clientes mais <Mark>facilmente!</Mark> 
+              O cliente já chega sabendo dos nossos empreendimentos e todos os seus detalhes
             </p>
-
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Mota Construtora"
+              title="Site & CRM"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              A nossa gestão interna era uma <Mark>bagunça!</Mark>
+              Nenhuma plataforma nos antendia, até que a Amnos nos ajudou 
+              a ter a nossa própria.
             </p>
-
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="M.Rocha Custom Guitar"
+              title="Site Institucional & CRM"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              Hoje temos muito mais <Mark>credibilidade!</Mark> 
+              Quando os clientes nos conhecem e abrem nosso site, eles tem mais
+              facilidade em conhecer o nosso trabalho e o que entregamos.
             </p>
-
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Vinyl Art Revest"
+              title="Site Institucional"
             />
           </div>
         </div>

@@ -21,31 +21,48 @@ export default function Home() {
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <div className="justify-center flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+        <a
+          href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+          target="_blank"
+          rel="noopener"
+          className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+          Fale Conosco
+        </a>
+      </div>
+      
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Conheça um pouco sobre nós"
-        title="Entenda o que é a Amnos e como podemos lhe ajudar"
+        title="Como a Amnos pode lhe ajudar"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        Enten.
       </SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+      <Video videoId="fZ0D0cnR88E" /> */}
 
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
+        preTitle="FEADBACKS"
+        title="Veja o que nossos clientes falaram sobre nós"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        {/* Testimonials is a great way to increase the brand trust and awareness.
+        Use this section to highlight your popular customers. */}
       </SectionTitle>
 
       <Testimonials />
+      <div className="justify-center flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+        <a
+          href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+          target="_blank"
+          rel="noopener"
+          className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+          Fale Conosco
+        </a>
+        
+      </div>
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle preTitle="FAQ" title="Dúvidas frequentes">
+        Encontre possíveis dúvidas.
       </SectionTitle>
 
       <Faq />

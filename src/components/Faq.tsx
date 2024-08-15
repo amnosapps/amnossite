@@ -36,21 +36,26 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Como será o processo de desenvolvimento?",
+    answer: "O processo de desenvolvimento geralmente segue etapas como a coleta de requisitos, planejamento, design, desenvolvimento, testes, e implantação. Mantemos o cliente informado em cada etapa através de reuniões e relatórios de progresso.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Como serão definidos os requisitos do software?",
+    answer: "rabalhamos em conjunto com você para entender suas necessidades e objetivos. Realizamos reuniões iniciais para discutir suas ideias e, com base nisso, criamos um documento de requisitos detalhado que será usado como base para o desenvolvimento.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "O que acontece se eu quiser adicionar novas funcionalidades durante o desenvolvimento?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Novas funcionalidades podem ser adicionadas durante o desenvolvimento, mas isso pode impactar o prazo e o custo final. Vamos avaliar as mudanças solicitadas e fornecer uma nova estimativa de tempo e custo.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Como é feito o acompanhamento do progresso do projeto?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Mantemos uma comunicação regular com você durante todo o projeto. Podemos usar ferramentas de gerenciamento de projetos para compartilhar atualizações em tempo real, relatórios de progresso semanais e realizar reuniões periódicas para discutir o andamento.",
+  },
+  {
+    question: "Quanto tempo leva para desenvolver o software?",
+    answer:
+      "O tempo necessário para desenvolver um software varia de acordo com a complexidade do projeto, o número de funcionalidades, o tamanho da equipe envolvida e outros fatores. Em geral, projetos pequenos como um MVP podem levar de 1 a 3 meses, enquanto projetos mais complexos podem levar de 3 a 6 meses.",
   },
 ];
