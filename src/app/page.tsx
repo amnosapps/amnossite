@@ -8,6 +8,7 @@ import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
+import { OpenClose } from "@/components/PopupWidget";
 export default function Home() {
   return (
     <Container>
@@ -23,7 +24,8 @@ export default function Home() {
       <Benefits imgPos="right" data={benefitTwo} />
       <div className="justify-center flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
         <a
-          href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+          // onClick={OpenClose}
+          href="https://api.whatsapp.com/send/?phone=5583981487172&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener"
           className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
@@ -52,7 +54,7 @@ export default function Home() {
       <Testimonials />
       <div className="justify-center flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
         <a
-          href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+          href="https://api.whatsapp.com/send/?phone=5583981487172&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener"
           className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">

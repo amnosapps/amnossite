@@ -8,6 +8,13 @@ import {
   DisclosureButton,
 } from "@headlessui/react";
 
+var isOpen = false
+
+export function OpenClose() {
+  isOpen = !isOpen
+  console.log(isOpen)
+}
+
 export function PopupWidget() { 
   const {
     register,
@@ -26,7 +33,7 @@ export function PopupWidget() {
 
   const onSubmit = async (data: any, e: any) => {
     console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
+    await fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,12 +63,25 @@ export function PopupWidget() {
   return (
     <div>
       <Disclosure>
-        {({ open }) => (
+        {() => (
+          
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-indigo-500 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 ease">
+            {isOpen && (
+              <DisclosurePanel>
+                <div className="popup">
+                  <p>Popup content goes here</p>
+                  <button onClick={OpenClose}>Close Popup</button>
+                </div>
+              </DisclosurePanel>
+            )}
+            <DisclosureButton 
+              className="fixed z-40 flex items-center justify-center transition duration-300 bg-indigo-500 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 ease"
+              >
+               {isOpen && ('Close Popup')}
+               
               <span className="sr-only">Abrir formulário</span>
               <Transition
-                show={!open}
+                show={!isOpen}
                 enter="transition duration-200 transform ease"
                 enterFrom="opacity-0 -rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
@@ -84,7 +104,7 @@ export function PopupWidget() {
               </Transition>
 
               <Transition
-                show={open}
+                show={isOpen}
                 enter="transition duration-200 transform ease"
                 enterFrom="opacity-0 rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
